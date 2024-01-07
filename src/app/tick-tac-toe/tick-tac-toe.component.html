@@ -1,0 +1,19 @@
+<div class="tic-tac-toe-container">
+  <h2>{{next}}</h2>
+  <div class="row">
+    <square [value]="squares[0]" (send)="handleClick(0)"></square>
+    <square [value]="squares[1]" (send)="handleClick(1)"></square>
+    <square [value]="squares[2]" (send)="handleClick(2)"></square>
+  </div>
+  <div class="row">
+    <square [value]="squares[3]" (send)="handleClick(3)"></square>
+    <square [value]="squares[4]" (send)="handleClick(4)"></square>
+    <square [value]="squares[5]" (send)="handleClick(5)"></square>
+  </div>
+  <div class="row">
+    <square [value]="squares[6]" (send)="handleClick(6)"></square>
+    <square [value]="squares[7]" (send)="handleClick(7)"></square>
+    <square [value]="squares[8]" (send)="handleClick(8)"></square>
+  </div>
+  <button (click)="resetGame()">Reset</button>
+</div>
